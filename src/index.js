@@ -7,7 +7,7 @@ const { urlencoded } = require('express');
 const app = express();
 const port = 3000;
 
-const route = require('./routes');
+const route = require("./routes");
 
 app.use(
     express.urlencoded({
