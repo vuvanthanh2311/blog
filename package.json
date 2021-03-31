@@ -9,15 +9,15 @@
         "complie": "node-sass --watch src/resourses/sass/ -o src/public/css/ ",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-
-    "lint-staged": {
-        "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
-    },
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
         }
     },
+    "lint-staged": {
+        "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+    },
+
     "author": "",
     "license": "ISC",
     "dependencies": {
